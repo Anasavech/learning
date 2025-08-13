@@ -9,5 +9,6 @@ public class Main {
 
 
         human.surname = "Горя";
+        System.out.println("Хуйня какая-то");
     }
 }
