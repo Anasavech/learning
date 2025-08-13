@@ -12,12 +12,12 @@ package level_9.lecture_6.task_2;
 public class Solution_1 {
     
     public static void main(String[] args) {
-        System.out.println(getPowerOfTwo(3));
+        System.out.println(getPowerOfTwo(2));
     }
 
     public static int getPowerOfTwo(int power) {
         int result = 2;
-        int i = result << power - 1;
-        return result;
+        int i = result << power;
+        return i;
     }
 }
