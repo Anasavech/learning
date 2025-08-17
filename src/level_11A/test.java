@@ -2,6 +2,6 @@ package level_11A;
 
 public class test {
     public static void main(String[] args) {
-        System.out.println("Салам");
+        System.out.println("Пополам");
     }
 }
