@@ -20,13 +20,13 @@ public class Solution_1 {
         System.out.println("___________________________________");
 
         HashSet<String> hashSet = arrayToHashSet(array);
-        for(String s : hashSet) {
+        for (String s : hashSet) {
             System.out.println(s);
         }
     }
 
     public static HashSet<String> arrayToHashSet(String[] strings) {
-        HashSet <String> newArrayToHashSet = new HashSet<>();
+        HashSet<String> newArrayToHashSet = new HashSet<>();
 
         for (int i = 0; i < strings.length; i++) {
             newArrayToHashSet = new HashSet<>();
