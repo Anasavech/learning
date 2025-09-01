@@ -1,5 +1,5 @@
 package level_14.task_2;
-import java.util.Collections;
+
 import java.util.HashSet;
 
 /**
