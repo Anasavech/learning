@@ -1,4 +1,4 @@
-package level_14.task_2;
+package level_14.lecture_1.task_2;
 
 import java.util.HashSet;
 

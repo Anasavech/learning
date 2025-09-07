@@ -1,4 +1,4 @@
-package level_14.task_3;
+package level_14.lecture_1.task_3;
 
 import java.util.HashSet;
 import static java.util.Arrays.asList;
