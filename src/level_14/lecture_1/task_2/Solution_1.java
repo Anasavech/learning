@@ -1,5 +1,6 @@
 package level_14.lecture_1.task_2;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 /**
@@ -26,12 +27,11 @@ public class Solution_1 {
     }
 
     public static HashSet<String> arrayToHashSet(String[] strings) {
+
         HashSet<String> newArrayToHashSet = new HashSet<>();
 
-        for (int i = 0; i < strings.length; i++) {
-            newArrayToHashSet = new HashSet<>();
-            newArrayToHashSet.add(strings[i]);
-        }
+        newArrayToHashSet.addAll(Arrays.asList(strings));
+
         return (newArrayToHashSet);
     }
 }

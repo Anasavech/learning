@@ -46,6 +46,7 @@ public class Solution_1 {
 
         for (String students : grades.keySet()) {
             mark += grades.get(students);
+            mark /= grades.size();
         }
         return mark;
     }
