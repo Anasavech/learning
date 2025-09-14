@@ -44,7 +44,7 @@ public class Solution_2_1 {
             ArrayIndexOutOfBoundsException();
 
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            System.out.println(NOT_EXIST);
         }
     }
 
@@ -58,7 +58,7 @@ public class Solution_2_1 {
                 System.out.println("Студент " + studentsJournal.get(inputInt) + " " + ANSWERING);
                 break;
 
-            } else if (input.equalsIgnoreCase(EXIT)) {
+            } else if (EXIT.equals(input.toUpperCase())) {
                 System.out.println(EXIT);
                 break;
 
