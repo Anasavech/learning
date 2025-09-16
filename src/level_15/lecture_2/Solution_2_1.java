@@ -23,8 +23,7 @@ public class Solution_2_1 {
     public static final String EXIT = "exit";
     public static final String ANSWERING = "Отвечает ";
     public static final String NOT_EXIST = "Студента с таким номером не существует";
-
-
+    
     static List<String> studentsJournal = Arrays.asList(
             "Тимур Мясной",
             "Пенелопа Сиволап",
@@ -36,35 +35,24 @@ public class Solution_2_1 {
             "Роксана Борисенко",
             "Юлиан Мумбриков",
             "Зигфрид Горемыкин");
-
+    
     public static void main(String[] args) {
-        System.out.print(PROMPT_STRING);
-
-        try {
-            ArrayIndexOutOfBoundsException();
-
-        } catch (Exception e) {
-            System.out.println(NOT_EXIST);
-        }
-    }
-
-    public static void ArrayIndexOutOfBoundsException()  {
         Scanner scanner = new Scanner(System.in);
-        int inputInt = scanner.nextInt();
-        String input = scanner.nextLine();
 
         while (true) {
-            if (inputInt <= studentsJournal.size()) {
-                System.out.println("Студент " + studentsJournal.get(inputInt) + " " + ANSWERING);
-                break;
+            System.out.print(PROMPT_STRING);
 
-            } else if (EXIT.equals(input.toUpperCase())) {
-                System.out.println(EXIT);
+            String input = scanner.nextLine();
+            if (input.toLowerCase().equals(EXIT)) {
                 break;
+            }
 
-            } else {
+            try {
+                int studentId;
+                studentId = Integer.parseInt(input);
+                System.out.println(ANSWERING + studentsJournal.get(studentId));
+            } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println(NOT_EXIST);
-                break;
             }
         }
     }
